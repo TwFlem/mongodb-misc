@@ -1,3 +1,9 @@
-/**
- * Created by trentonfleming on 8/24/17.
- */
+const mongoose = require('mongoose');
+
+const UserSchema = new mongoose.Schema({
+  name: String
+});
+
+const User = mongoose.model('user', UserSchema);
+
+module.exports = User;
